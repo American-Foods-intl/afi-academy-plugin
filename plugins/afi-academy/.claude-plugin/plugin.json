@@ -1,0 +1,9 @@
+{
+  "name": "afi-academy",
+  "displayName": "AFI Academy",
+  "version": "0.1.1",
+  "description": "Create AFI Academy training courses with Claude: /afi-course.",
+  "author": {
+    "name": "American Foods IT"
+  }
+}

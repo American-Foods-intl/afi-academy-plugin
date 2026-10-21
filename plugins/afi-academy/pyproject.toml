@@ -1,0 +1,22 @@
+[project]
+name = "afi-academy-connector"
+version = "0.1.1"
+description = "Local MCP connector: lets Claude Code save AFI Academy course drafts"
+requires-python = ">=3.12"
+dependencies = ["mcp>=2.0,<3", "httpx>=0.27"]
+
+[project.scripts]
+afi-academy-connector = "afi_academy_connector.server:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["afi_academy_connector"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
