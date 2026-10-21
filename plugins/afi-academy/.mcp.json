@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "afi-academy": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--frozen",
+        "--no-dev",
+        "--project",
+        "${CLAUDE_PLUGIN_ROOT}",
+        "afi-academy-connector"
+      ]
+    }
+  }
+}
